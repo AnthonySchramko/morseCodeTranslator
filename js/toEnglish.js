@@ -1,4 +1,4 @@
-export const morseCode = {
+const englishCode = {
   A: ".-",
   B: "-...",
   C: "-.-.",
@@ -20,18 +20,8 @@ export const morseCode = {
   S: "...",
   T: "-",
   U: "..-",
-  V: "...-",
   W: ".--",
   X: "-..-",
   Y: "-.--",
   Z: "--..",
-};
-export const toMorse = (phrase) => {
-  return phrase
-    .toUpperCase()
-    .split("")
-    .map((letter) => {
-      return morseCode[letter] ? morseCode[letter] : letter;
-    })
-    .join("");
 };

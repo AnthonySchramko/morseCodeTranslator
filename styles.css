@@ -1,0 +1,13 @@
+.wrapper {
+  display: flex;
+  justify-content: Center;
+  align-items: center;
+}
+.submitButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header {
+  text-align: center;
+}

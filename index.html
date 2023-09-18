@@ -7,5 +7,26 @@
     <link rel="stylesheet" href="./styles.css" />
     <title>Morse Code Translator</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Welcome to a Morse Code translator</h1>
+      <p>
+        Please put a phrase in either the english or morse areas, then decide
+        which direction you want to translate.
+      </p>
+    </header>
+    <div class="wrapper">
+      <form class="english">
+        <label for="englishBox">English:</label>
+        <input type="text" id="englishBox" name="englishBox" />
+        <select name="translateOption" id="translateOption">
+          <option value="morseToEnglish">←</option>
+          <option value="englishToMorse">→</option>
+        </select>
+        <label for="morseBox">Morse Code:</label>
+        <input type="text" id="morseBox" name="morseBox" />
+      </form>
+    </div>
+    <div id="submitButton"><input type="submit" value="Translate" /></div>
+  </body>
 </html>
