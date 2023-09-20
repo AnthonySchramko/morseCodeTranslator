@@ -1,5 +1,6 @@
 import { morseCode } from "./toMorse.js";
 const reverseMorseCode = {};
+
 for (const [character, index] of Object.entries(morseCode)) {
   reverseMorseCode[index] = character;
 }
