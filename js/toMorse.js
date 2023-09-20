@@ -27,11 +27,23 @@ export const morseCode = {
   Z: "--..",
 };
 export const toMorse = (phrase) => {
-  return phrase
-    .toUpperCase()
-    .split("")
-    .map((letter) => {
-      return morseCode[letter] ? morseCode[letter] : letter;
-    })
-    .join("");
+  if (phrase === "") {
+    throw new Error("Please provide an input");
+  }
+  if (/[^A-Z\s]/.test(phrase.toUpperCase())) {
+    throw new Error(
+      "Please provide your english phrase with alphabetic characters. This means no special characters, such as !@8'."
+    );
+  }
+  const seperated = phrase.split(" ");
+  const translated = seperated.map((word) => {
+    return word
+      .toUpperCase()
+      .split("")
+      .map((letter) => {
+        return morseCode[letter] ? morseCode[letter] : letter;
+      })
+      .join(" ");
+  });
+  return translated.join("|");
 };

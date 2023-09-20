@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script type="module" src="./script.js" defer></script>
+    <script defer type="module" src="./script.js"></script>
     <link rel="stylesheet" href="./styles.css" />
     <title>Morse Code Translator</title>
   </head>
@@ -14,19 +14,55 @@
         Please put a phrase in either the english or morse areas, then decide
         which direction you want to translate.
       </p>
+      <p>
+        Please split morse code words with a '|', otherwise we won't like you :)
+      </p>
     </header>
     <div class="wrapper">
-      <form class="english">
-        <label for="englishBox">English:</label>
-        <input type="text" id="englishBox" name="englishBox" />
-        <select name="translateOption" id="translateOption">
-          <option value="morseToEnglish">←</option>
-          <option value="englishToMorse">→</option>
-        </select>
-        <label for="morseBox">Morse Code:</label>
-        <input type="text" id="morseBox" name="morseBox" />
-      </form>
+      <label for="englishBox">English:</label>
+      <input
+        type="text"
+        id="englishBox"
+        name="englishBox"
+        class="inputBox"
+        value="eg. sos"
+      />
+
+      <div class="button-list">
+        <button id="englishToMorse">↓</button>
+        <button id="morseToEnglish">↑</button>
+      </div>
+      <label for="morseBox">Morse Code:</label>
+      <input
+        type="text"
+        id="morseBox"
+        name="morseBox"
+        class="inputBox"
+        value="eg. ... --- ..."
+      />
     </div>
-    <div id="submitButton"><input type="submit" value="Translate" /></div>
   </body>
 </html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styling/style.css" />
+    <script defer src="./script.js"></script>
+    <link rel="icon" type="image/png" href="./favicon/favicon.ico" />
+    <title>Morse Code Translator</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Morse Code Translater</h1>
+      <label for="input">Enter Text or Morse Code:</label>
+      <textarea id="input" rows="4"></textarea>
+      <div class="btn-container">
+        <button id="translate">Translate</button>
+      </div>
+      <p>Translation: <span id="output"></span></p>
+    </div>
+  </body>
+</html> -->

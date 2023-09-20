@@ -2,6 +2,7 @@
   display: flex;
   justify-content: Center;
   align-items: center;
+  flex-direction: column;
 }
 .submitButton {
   display: flex;
@@ -10,4 +11,13 @@
 }
 header {
   text-align: center;
+}
+.button-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.inputBox {
+  width: 200px;
 }
