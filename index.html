@@ -20,49 +20,28 @@
     </header>
     <div class="wrapper">
       <label for="englishBox">English:</label>
-      <input
-        type="text"
+      <textarea
         id="englishBox"
         name="englishBox"
+        cols="30"
+        rows="10"
+        placeholder="eg. sos"
         class="inputBox"
-        value="eg. sos"
-      />
-
+      ></textarea>
       <div class="button-list">
         <button id="englishToMorse">↓</button>
         <button id="morseToEnglish">↑</button>
       </div>
       <label for="morseBox">Morse Code:</label>
-      <input
+      <textarea
         type="text"
         id="morseBox"
         name="morseBox"
+        cols="30"
+        rows="10"
         class="inputBox"
-        value="eg. ... --- ..."
-      />
+        placeholder="eg. ... --- ..."
+      ></textarea>
     </div>
   </body>
 </html>
-
-<!-- <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styling/style.css" />
-    <script defer src="./script.js"></script>
-    <link rel="icon" type="image/png" href="./favicon/favicon.ico" />
-    <title>Morse Code Translator</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Morse Code Translater</h1>
-      <label for="input">Enter Text or Morse Code:</label>
-      <textarea id="input" rows="4"></textarea>
-      <div class="btn-container">
-        <button id="translate">Translate</button>
-      </div>
-      <p>Translation: <span id="output"></span></p>
-    </div>
-  </body>
-</html> -->
